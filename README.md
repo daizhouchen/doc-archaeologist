@@ -4,9 +4,9 @@
 
 ## Description
 
-**doc-archaeologist** is an [OpenClaw](https://openclawskill.ai) skill for Claude Code that performs a full archaeological dig through your project's documentation and code comments. It discovers every documentation artifact -- README files, changelogs, inline docstrings, JSDoc blocks, and TODO/FIXME markers -- then cross-references them against the actual codebase to surface staleness, broken references, invalid commands, and environment variable drift. The result is a graded health report with actionable fix suggestions.
+**doc-archaeologist** is an [OpenClaw](https://openclawskill.ai) skill for OpenClaw that performs a full archaeological dig through your project's documentation and code comments. It discovers every documentation artifact -- README files, changelogs, inline docstrings, JSDoc blocks, and TODO/FIXME markers -- then cross-references them against the actual codebase to surface staleness, broken references, invalid commands, and environment variable drift. The result is a graded health report with actionable fix suggestions.
 
-This is a skill for the OpenClaw ecosystem, not a standalone CLI tool. Once installed, Claude Code automatically invokes it when you mention documentation quality, outdated docs, or stale comments in conversation.
+This is a skill for the OpenClaw ecosystem, not a standalone CLI tool. Once installed, OpenClaw automatically invokes it when you mention documentation quality, outdated docs, or stale comments in conversation.
 
 ## Archaeology Pipeline
 
@@ -74,7 +74,7 @@ npx @anthropic-ai/claw@latest skill add daizhouchen/doc-archaeologist
 
 ## Quick Start
 
-Once installed, simply ask Claude Code about your documentation quality. The skill triggers automatically. You can also run the pipeline manually:
+Once installed, simply ask OpenClaw about your documentation quality. The skill triggers automatically. You can also run the pipeline manually:
 
 ```bash
 # Phase 1: Scan documentation inventory
@@ -87,7 +87,7 @@ python3 SKILL_DIR/scripts/analyze_freshness.py /path/to/project /tmp/doc-arch-in
 python3 SKILL_DIR/scripts/report.py /path/to/project /tmp/doc-arch-findings.json
 ```
 
-Replace `SKILL_DIR` with the absolute path to this skill's directory and `/path/to/project` with the target project root. When invoked through Claude Code, these paths are resolved automatically.
+Replace `SKILL_DIR` with the absolute path to this skill's directory and `/path/to/project` with the target project root. When invoked through OpenClaw, these paths are resolved automatically.
 
 ## How It Works
 
@@ -147,7 +147,7 @@ A `fix-suggestions/README.md` summary is also created listing the total count of
 
 ## Trigger Phrases
 
-The skill activates when Claude Code detects documentation-related intent:
+The skill activates when OpenClaw detects documentation-related intent:
 
 **Chinese:** "文档过期", "README 需要更新", "注释不准确", "文档审查", "文档质量", "这个项目的文档是不是有点旧了"
 
