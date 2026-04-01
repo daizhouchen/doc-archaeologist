@@ -2,7 +2,7 @@
 
 > Dig up stale docs, broken references, and misleading comments before they mislead your team.
 
-A [Claude Code](https://claude.ai/code) skill that scans project documentation and code comments, finds outdated, inconsistent, or misleading content, and generates an archaeology report with a health grade (A-F) and fix suggestions.
+An [OpenClaw](https://openclawskill.ai) skill that scans project documentation and code comments, finds outdated, inconsistent, or misleading content, and generates an archaeology report with a health grade (A-F) and fix suggestions.
 
 ## Features
 
@@ -28,7 +28,7 @@ A [Claude Code](https://claude.ai/code) skill that scans project documentation a
 ## Installation
 
 ```bash
-claude skill add daizhouchen/doc-archaeologist
+npx @anthropic-ai/claw@latest skill add daizhouchen/doc-archaeologist
 ```
 
 ## How It Works
